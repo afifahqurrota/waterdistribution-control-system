@@ -58,6 +58,3 @@ void rtc_setup() {
       Serial.println("RTC Lost Power, lets set the time!");
       rtc.adjust(DateTime(F(__DATE__), F(__TIME__)));}
   }
-  
-void np() {
-}
