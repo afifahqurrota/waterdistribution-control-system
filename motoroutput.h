@@ -1,16 +1,16 @@
 void output1() {
       if((debit1<2.00) && (debit1>=0.00)) {
-        stepperOutB.moveTo(-55);
+        stepperOutB.moveTo(-50);
         stepperOutB.runToPosition();
         Serial.print(",");
         Serial.print("b50");}
       else if((debit1>2.00) && (debit1<2.50)) {
-        stepperOutB.moveTo(-50);
+        stepperOutB.moveTo(-45);
         stepperOutB.runToPosition();
         Serial.print(",");
         Serial.print("b45");}
       else if(debit1>3.00) {
-        stepperOutB.moveTo(-45);
+        stepperOutB.moveTo(-40);
         stepperOutB.runToPosition();
         Serial.print(",");
         Serial.print("b40");}
@@ -34,17 +34,17 @@ void output1() {
     
  void output2() {
     if((debit1<1.00) && (debit1>=0.00)) {
-      stepperOutB.moveTo(-40);
+      stepperOutB.moveTo(-30);
       stepperOutB.runToPosition();
       Serial.print(",");
       Serial.print("b30");}
     else if((debit1>1.50) && (debit1<2.00)) {
-      stepperOutB.moveTo(-35);
+      stepperOutB.moveTo(-25);
       stepperOutB.runToPosition();
       Serial.print(",");
       Serial.print("b25");}
     else if(debit1>2.00) {
-      stepperOutB.moveTo(-30);
+      stepperOutB.moveTo(-20);
       stepperOutB.runToPosition();
       Serial.print(",");
       Serial.print("b20");}
